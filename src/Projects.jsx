@@ -8,6 +8,10 @@ import shep from "./assets/shep.jpeg";
 const CHUCK_LINK = "https://chuck.stanford.edu/";
 const WEBCHUCK_LINK = "https://chuck.cs.princeton.edu/webchuck/";
 const FAUST_LINK = "https://faust.grame.fr/";
+const BUB_LINK = "https://ccrma.stanford.edu/~kliao14/bub/";
+const SHEP_LINK = "https://ccrma.stanford.edu/~kliao14/shep/";
+const GLASS_ETUDE_SCORE_LINK =
+  "https://musescore.com/user/61065196/scores/12555049";
 
 const Projects = () => {
   return (
@@ -22,13 +26,25 @@ const Projects = () => {
               Saxophone Quartet, Stanford CCRMA 2022
             </h3>
           </div>
-          <Player url="https%3A//api.soundcloud.com/tracks/1637020254%3Fsecret_token%3Ds-UWMleiZdvYz&color=%23ff5500&auto_play=false&hide_related=true&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" />
+          <Player url="https%3A//api.soundcloud.com/tracks/1637020254%3Fsecret_token%3Ds-UWMleiZdvYz&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" />
 
           <p className="mb-2">
             "Running, Stomping In My Sleep" is a piece for saxophone quartet.
             The tripartite composition explores the whimsy, violence, and calm
             of a dream world, using a blend of polytonality, chromaticism, and
-            stream segregation techniques.
+            stream segregation techniques.{" "}
+          </p>
+
+          <p>
+            {" "}
+            <a
+              href="https://musescore.com/user/61065196/scores/12553795"
+              className="text-blue-600 hover:text-blue-800 visited:text-purple-600"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Full score.
+            </a>
           </p>
         </div>
 
@@ -42,6 +58,17 @@ const Projects = () => {
           <p className="mb-2">
             "Glass Étude" is a study concerning the construction of rhythmic
             motifs.
+          </p>
+          <p>
+            {" "}
+            <a
+              href={GLASS_ETUDE_SCORE_LINK}
+              className="text-blue-600 hover:text-blue-800 visited:text-purple-600"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Full score.
+            </a>
           </p>
         </div>
       </Subsection>
@@ -60,8 +87,8 @@ const Projects = () => {
             evoke the feeling of being overwhelmed by noise in a library. This
             algorithmic composition was created purely in the{" "}
             <a
-              className="text-blue-600 hover:text-blue-800 visited:text-purple-600"
               href={CHUCK_LINK}
+              className="text-blue-600 hover:text-blue-800 visited:text-purple-600"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -87,23 +114,25 @@ const Projects = () => {
             the randomization involved in the process.
           </p>
         </div>
-
-        <div className="pb-5">
-          <h2 className="text-3xl font-extrabold">Sky Burial</h2>
-          <h3 className="text-xl font-light text-slate-500">2022</h3>
+        <div className="mb-6" id="piece">
+          <div className="pb-5">
+            <h2 className="text-3xl font-extrabold">Sky Burial</h2>
+            <h3 className="text-xl font-light text-slate-500">2022</h3>
+          </div>
+          <Player url="https://soundcloud.com/kevin-liao-775540098/sky-burial?in=kevin-liao-775540098/sets/sky-burial&si=32033cdb508f49678b2338626cdf31aa&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" />
+          <p className="">
+            "Sky Burial" refers to a Tibetan Buddhist practice in which a body
+            is generously fed to Himalayan vultures. This EP explores sound
+            design and sampling, including sounds from traditional media,
+            recorded noise from nature, and tuned machine noise.
+          </p>
         </div>
-        <Player url="https://soundcloud.com/kevin-liao-775540098/sky-burial?in=kevin-liao-775540098/sets/sky-burial&si=32033cdb508f49678b2338626cdf31aa&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" />
-        <p className="">
-          "Sky Burial" refers to a Tibetan Buddhist practice in which a body is
-          generously fed to Himalayan vultures. This EP explores sound design
-          and sampling, including sounds from traditional media, recorded noise
-          from nature, and tuned machine noise.
-        </p>
       </Subsection>
       <Subsection id="web" title="Web Applications">
         <div className="flex gap-2 flex-wrap sm:flex-nowrap">
-          <Card title="Bubble Bells" src={bub}>
-            Made with Javascript and{" "}
+          <Card title="Bubble Bells" src={bub} link={BUB_LINK}>
+            Interactive ambient chord player based on a simplified physics.
+            Graphics created in Javascript. Sound designed in{" "}
             <a
               className="text-blue-600 hover:text-blue-800 visited:text-purple-600"
               href={WEBCHUCK_LINK}
@@ -113,8 +142,13 @@ const Projects = () => {
               WebChucK.
             </a>
           </Card>
-          <Card title="Penrose Stairs and Shepard Tone Scale" src={shep}>
-            Made with Javascript and{" "}
+          <Card
+            title="Penrose Stairs and Shepard Tone Scale"
+            src={shep}
+            link={SHEP_LINK}
+          >
+            Audiovisualization of penrose stairs and shepard tone scale.
+            Graphics created in Javascript. Sound designed in{" "}
             <a
               className="text-blue-600 hover:text-blue-800 visited:text-purple-600"
               href={WEBCHUCK_LINK}
