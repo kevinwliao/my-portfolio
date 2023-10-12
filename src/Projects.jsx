@@ -129,67 +129,71 @@ const Projects = () => {
         </div>
       </Subsection>
       <Subsection id="web" title="Web Applications">
-        <div className="flex gap-2 flex-wrap sm:flex-nowrap">
-          <Card title="Bubble Bells" src={bub} link={BUB_LINK}>
-            Interactive ambient chord player based on a simplified physics.
-            Graphics created in Javascript. Sound designed in{" "}
-            <a
-              className="text-blue-600 hover:text-blue-800 visited:text-purple-600"
-              href={WEBCHUCK_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
+        <div className="mb-6" id="piece">
+          <div className="flex gap-2 flex-wrap sm:flex-nowrap">
+            <Card title="Bubble Bells" src={bub} link={BUB_LINK}>
+              Interactive ambient chord player based on a simplified physics.
+              Graphics created in Javascript. Sound designed in{" "}
+              <a
+                className="text-blue-600 hover:text-blue-800 visited:text-purple-600"
+                href={WEBCHUCK_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                WebChucK.
+              </a>
+            </Card>
+            <Card
+              title="Penrose Stairs and Shepard Tone Scale"
+              src={shep}
+              link={SHEP_LINK}
             >
-              WebChucK.
-            </a>
-          </Card>
-          <Card
-            title="Penrose Stairs and Shepard Tone Scale"
-            src={shep}
-            link={SHEP_LINK}
-          >
-            Audiovisualization of penrose stairs and shepard tone scale.
-            Graphics created in Javascript. Sound designed in{" "}
-            <a
-              className="text-blue-600 hover:text-blue-800 visited:text-purple-600"
-              href={WEBCHUCK_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              WebChucK.
-            </a>
-          </Card>
+              Audiovisualization of penrose stairs and shepard tone scale.
+              Graphics created in Javascript. Sound designed in{" "}
+              <a
+                className="text-blue-600 hover:text-blue-800 visited:text-purple-600"
+                href={WEBCHUCK_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                WebChucK.
+              </a>
+            </Card>
+          </div>
         </div>
       </Subsection>
       <Subsection id="physical" title="Physical Interaction Design for Music">
-        <div className="pb-5">
-          <h2 className="text-3xl font-extrabold">Beandolin</h2>
-          <h3 className="text-xl font-light text-slate-500">2023</h3>
+        <div className="mb-6" id="piece">
+          <div className="pb-5">
+            <h2 className="text-3xl font-extrabold">Beandolin</h2>
+            <h3 className="text-xl font-light text-slate-500">2023</h3>
+          </div>
+          <Player url="https://youtu.be/H8oFNkZPV88"></Player>
+          <p className="mb-2">
+            Beandolin is a musical instrument that uses a Teensy microcontroller
+            to produce sound. A piezo microphone attached to the bottom of the
+            jar picks up a response which is routed through a physical guitar
+            model in the{" "}
+            <a
+              className="text-blue-600 hover:text-blue-800 visited:text-purple-600"
+              href={FAUST_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Faust
+            </a>{" "}
+            programming language. These bean noises are tuned to chord tones,
+            depending on the current chord, which the musician selects using
+            buttons. Force-sensitive resistors also allow the user to play bass
+            notes.{" "}
+          </p>
+          <p>
+            This integration of sound design, functional programming, and
+            microcontroller programming allows for a fun musical performance.
+            The above video demonstrates the instrument used to create a
+            bluegrass-style rhythm section.
+          </p>
         </div>
-        <Player url="https://youtu.be/H8oFNkZPV88"></Player>
-        <p className="mb-2">
-          Beandolin is a musical instrument that uses a Teensy microcontroller
-          to produce sound. A piezo microphone attached to the bottom of the jar
-          picks up a response which is routed through a physical guitar model in
-          the{" "}
-          <a
-            className="text-blue-600 hover:text-blue-800 visited:text-purple-600"
-            href={FAUST_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Faust
-          </a>{" "}
-          programming language. These bean noises are tuned to chord tones,
-          depending on the current chord, which the musician selects using
-          buttons. Force-sensitive resistors also allow the user to play bass
-          notes.{" "}
-        </p>
-        <p>
-          This integration of sound design, functional programming, and
-          microcontroller programming allows for a fun musical performance. The
-          above video demonstrates the instrument used to create a
-          bluegrass-style rhythm section.
-        </p>
       </Subsection>
     </section>
   );

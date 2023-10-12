@@ -10,7 +10,7 @@ const Card = (props) => {
         <h2 className="card-title">{props.title}</h2>
         <p>{props.children}</p>
         <div className="card-actions justify-end">
-          <a href={props.link}>
+          <a target="_blank" rel="noopener noreferrer" href={props.link}>
             <button className="btn btn-primary">Open</button>
           </a>
         </div>
