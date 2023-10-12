@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Projects from "./Projects";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 import Hero from "./Hero";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <div id="projects">
         <Projects />
       </div>
+      <Footer></Footer>
     </>
   );
 }
