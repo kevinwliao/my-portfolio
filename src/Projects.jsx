@@ -24,10 +24,12 @@ const NIGHTMARE_LIBRARY_LINK =
 const SKY_BURIAL_LINK =
   "https://soundcloud.com/kevin-liao-775540098/sky-burial?in=kevin-liao-775540098/sets/sky-burial&si=32033cdb508f49678b2338626cdf31aa&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing";
 const BEANDOLIN_LINK = "https://youtu.be/H8oFNkZPV88";
+const BE_STILL_LINK =
+  "https://soundcloud.com/kevin-liao-775540098/be-still-1?si=4887ed52558d46279c11ac89595b56e1&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing";
 
 const Projects = () => {
   return (
-    <section className="bg-base-200 px-8 sm:px-36 md:px-48 lg:px-64 xl:px-80">
+    <section className="bg-base-200 px-8 sm:px-24 md:px-48 lg:px-60 xl:px-80">
       <Subsection id="acoustic" title="Acoustic Compositions">
         <div className="mb-6" id="piece">
           <div className="pb-5">
@@ -35,7 +37,7 @@ const Projects = () => {
               Running, Stomping in My Sleep
             </h2>
             <h3 className="text-xl font-light text-slate-500">
-              Saxophone Quartet, Stanford CCRMA 2022
+              Saxophone Quartet, CCRMA 2022
             </h3>
           </div>
           <Player url={RUNNING_LINK} />
@@ -91,7 +93,7 @@ const Projects = () => {
         <div className="mb-6" id="piece">
           <div className="pb-5">
             <h2 className="text-3xl font-extrabold">Nightmare Library</h2>
-            <h3 className="text-xl font-light text-slate-500">2022</h3>
+            <h3 className="text-xl font-light text-slate-500">ChucK 2023</h3>
           </div>
           <Player url={NIGHTMARE_LIBRARY_LINK} />
           <p className="mb-2">
@@ -107,7 +109,7 @@ const Projects = () => {
               ChucK
             </a>{" "}
             programming language. All sounds were created through sample
-            manipulation in ChucK. Each run of the piece in ChucK creates a
+            manipulation in ChucK. Each run of the ChucK program creates a
             slightly different sound due to the randomness built into the
             algorithm.{" "}
           </p>
@@ -128,15 +130,13 @@ const Projects = () => {
         </div>
         <div className="mb-6" id="piece">
           <div className="pb-5">
-            <h2 className="text-3xl font-extrabold">Sky Burial</h2>
-            <h3 className="text-xl font-light text-slate-500">2022</h3>
+            <h2 className="text-3xl font-extrabold">Be Still!</h2>
+            <h3 className="text-xl font-light text-slate-500">2023</h3>
           </div>
-          <Player url={SKY_BURIAL_LINK} />
+          <Player url={BE_STILL_LINK} />
           <p className="">
-            "Sky Burial" refers to a Tibetan Buddhist practice in which a body
-            is generously fed to Himalayan vultures. This EP explores sound
-            design and sampling, including sounds from traditional media,
-            recorded noise from nature, and tuned machine noise.
+            Electronic music with influence from Miami bass and breakbeat, an
+            eclectic and maximalist instrumental.
           </p>
         </div>
       </Subsection>
@@ -153,7 +153,8 @@ const Projects = () => {
                 rel="noopener noreferrer"
               >
                 WebChucK.
-              </a>
+              </a>{" "}
+              Open in Chrome for full audio compatibility.
             </Card>
             <Card
               title="Penrose Stairs and Shepard Tone Scale"
@@ -169,7 +170,8 @@ const Projects = () => {
                 rel="noopener noreferrer"
               >
                 WebChucK.
-              </a>
+              </a>{" "}
+              Open in Chrome for full audio compatibility.
             </Card>
           </div>
         </div>
@@ -206,6 +208,23 @@ const Projects = () => {
             bluegrass-style rhythm section.
           </p>
         </div>
+      </Subsection>
+      <Subsection id="about" title="About Me">
+        <p className="mb-2">
+          Throughout my life, my passion for music has taken many different
+          forms: turning my childhood bedroom into a makeshift disco or writing
+          jingles for imaginary brands. Fast forward to high school, and
+          freestyle rap sessions with friends turned into collaborative
+          GarageBand projects, opening up a new world of electronic composition
+          and production.
+        </p>
+        <p className="mb-2">
+          Now in college, I call myself a Scruggs-style banjo player, pianist,
+          producer, composer, and writer, who also codes music and sound. These
+          labels are all subject to change, and I'm pumped to see where music
+          takes me next. I hope you enjoy this snapshot of who I am as a
+          creative today.
+        </p>
       </Subsection>
     </section>
   );

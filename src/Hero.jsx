@@ -14,15 +14,14 @@ const Hero = () => {
           <p className="py-6">
             Welcome! I'm a student at Stanford University, majoring in Symbolic
             Systems on the Computer Music concentration, where I explore the
-            interplays of technology and sound, and get to blend my experience
-            in production, composition, and computer programming.
+            dynamic interplays of technology and sound.
           </p>
           <p className="pb-6">
             I am currently working on sonification of temporal data in Nilam
             Ram's lab.
           </p>
           <a href="#acoustic" className="btn btn-neutral">
-            My Work
+            Selected Works
           </a>
         </div>
       </div>
