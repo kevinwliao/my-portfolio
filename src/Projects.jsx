@@ -8,6 +8,7 @@ import shep from "./assets/shep.jpeg";
 const CHUCK_LINK = "https://chuck.stanford.edu/";
 const NIGHTMARE_LIBRARY_CODE_LINK =
   "https://github.com/kevinwliao/nightmare-library/blob/main/nightmare-library.ck";
+const BEANDOLIN_CODE_LINK = "https://github.com/kevinwliao/beandolin";
 const WEBCHUCK_LINK = "https://chuck.cs.princeton.edu/webchuck/";
 const FAUST_LINK = "https://faust.grame.fr/";
 const BUB_LINK = "https://ccrma.stanford.edu/~kliao14/bub/";
@@ -20,16 +21,69 @@ const RUNNING_LINK =
 const GLASS_PRELUDE_LINK =
   "https://soundcloud.com/kevin-liao-775540098/glass-etude?si=160f620fade249149439492bb6944e6b&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing";
 const NIGHTMARE_LIBRARY_LINK =
-  "https://soundcloud.com/kevin-liao-775540098/nightmare-library?si=74adf6351ffd453e86d08d3f58ffa0bc&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing";
+  "https://soundcloud.com/kevin-liao-775540098/nightmare-library-1?si=665b13be94214dd1b5a6ec5c1573fc88&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing";
 const SKY_BURIAL_LINK =
   "https://soundcloud.com/kevin-liao-775540098/sky-burial?in=kevin-liao-775540098/sets/sky-burial&si=32033cdb508f49678b2338626cdf31aa&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing";
 const BEANDOLIN_LINK = "https://youtu.be/H8oFNkZPV88";
 const BE_STILL_LINK =
-  "https://soundcloud.com/kevin-liao-775540098/be-still-1?si=4887ed52558d46279c11ac89595b56e1&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing";
+  "https://soundcloud.com/kevin-liao-775540098/be-still?si=83af8efce8f24b848be08793a513ac62&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing";
 
 const Projects = () => {
   return (
     <section className="bg-base-200 px-8 sm:px-24 md:px-48 lg:px-60 xl:px-80">
+      <Subsection
+        id="electronic"
+        title="Electronic and Algorithmic Compositions"
+      >
+        <div className="mb-6" id="piece">
+          <div className="pb-5">
+            <h2 className="text-3xl font-extrabold">Nightmare Library</h2>
+            <h3 className="text-xl font-light text-slate-500">ChucK, 2023</h3>
+          </div>
+          <Player url={NIGHTMARE_LIBRARY_LINK} />
+          <p className="mb-2">
+            "Nightmare Library" is inspired by the work of Paul Lansky, meant to
+            evoke the feeling of being overwhelmed by noise in a library. This
+            algorithmic composition was created in the{" "}
+            <a
+              href={CHUCK_LINK}
+              className="text-blue-600 hover:text-blue-800 visited:text-purple-600"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ChucK
+            </a>{" "}
+            language, with event timing, sample manipulation, automation, and
+            tunings in code. Each run of the ChucK file creates a slightly
+            different sound due to the randomness built into the algorithm.{" "}
+          </p>
+          <p>
+            {" "}
+            If you would like to run the ChucK{" "}
+            <a
+              className="text-blue-600 hover:text-blue-800 visited:text-purple-600"
+              href={NIGHTMARE_LIBRARY_CODE_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              code
+            </a>{" "}
+            yourself, you will hear a unique instantiation of the piece due to
+            the randomization involved in the process.
+          </p>
+        </div>
+        <div className="mb-6" id="piece">
+          <div className="pb-5">
+            <h2 className="text-3xl font-extrabold">Be Still!</h2>
+            <h3 className="text-xl font-light text-slate-500">2023</h3>
+          </div>
+          <Player url={BE_STILL_LINK} />
+          <p className="">
+            Miami bass, breakbeat, and a little bit of bounce. An eclectic and
+            maximalist instrumental.
+          </p>
+        </div>
+      </Subsection>
       <Subsection id="acoustic" title="Acoustic Compositions">
         <div className="mb-6" id="piece">
           <div className="pb-5">
@@ -86,66 +140,14 @@ const Projects = () => {
           </p>
         </div>
       </Subsection>
-      <Subsection
-        id="electronic"
-        title="Electronic and Algorithmic Compositions"
-      >
-        <div className="mb-6" id="piece">
-          <div className="pb-5">
-            <h2 className="text-3xl font-extrabold">Nightmare Library</h2>
-            <h3 className="text-xl font-light text-slate-500">ChucK 2023</h3>
-          </div>
-          <Player url={NIGHTMARE_LIBRARY_LINK} />
-          <p className="mb-2">
-            "Nightmare Library" is inspired by the work of Paul Lansky, meant to
-            evoke the feeling of being overwhelmed by noise in a library. This
-            algorithmic composition was created purely in the{" "}
-            <a
-              href={CHUCK_LINK}
-              className="text-blue-600 hover:text-blue-800 visited:text-purple-600"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              ChucK
-            </a>{" "}
-            programming language. All sounds were created through sample
-            manipulation in ChucK. Each run of the ChucK program creates a
-            slightly different sound due to the randomness built into the
-            algorithm.{" "}
-          </p>
-          <p>
-            {" "}
-            If you would like to run the ChucK{" "}
-            <a
-              className="text-blue-600 hover:text-blue-800 visited:text-purple-600"
-              href={NIGHTMARE_LIBRARY_CODE_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              code
-            </a>{" "}
-            yourself, you will hear a unique instantiation of the piece due to
-            the randomization involved in the process.
-          </p>
-        </div>
-        <div className="mb-6" id="piece">
-          <div className="pb-5">
-            <h2 className="text-3xl font-extrabold">Be Still!</h2>
-            <h3 className="text-xl font-light text-slate-500">2023</h3>
-          </div>
-          <Player url={BE_STILL_LINK} />
-          <p className="">
-            Electronic music with influence from Miami bass and breakbeat, an
-            eclectic and maximalist instrumental.
-          </p>
-        </div>
-      </Subsection>
+
       <Subsection id="web" title="Web Applications">
         <div className="mb-6" id="piece">
           <div className="flex gap-2 flex-wrap sm:flex-nowrap">
             <Card title="Bubble Bells" src={bub} link={BUB_LINK}>
               Interactive ambient chord player based on a simplified physics.
-              Graphics created in Javascript. Sound designed in{" "}
+              Sliders adjust voices, numbers on keypad change chord. Graphics
+              created in Javascript. Sound designed in{" "}
               <a
                 className="text-blue-600 hover:text-blue-800 visited:text-purple-600"
                 href={WEBCHUCK_LINK}
@@ -201,11 +203,22 @@ const Projects = () => {
             buttons. Force-sensitive resistors also allow the user to play bass
             notes.{" "}
           </p>
-          <p>
+          <p className="mb-2">
             This integration of sound design, functional programming, and
             microcontroller programming allows for a fun musical performance.
             The above video demonstrates the instrument used to create a
             bluegrass-style rhythm section.
+          </p>
+          <p>
+            {" "}
+            <a
+              className="text-blue-600 hover:text-blue-800 visited:text-purple-600"
+              href={BEANDOLIN_CODE_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Faust code compiled to C++ and Arduino code.
+            </a>{" "}
           </p>
         </div>
       </Subsection>

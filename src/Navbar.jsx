@@ -16,12 +16,12 @@ const Navbar = () => {
                 <summary>Projects</summary>
                 <ul className="p-2 bg-base-200 w-56">
                   <li>
-                    <a href="#acoustic">Acoustic Compositions</a>
-                  </li>
-                  <li>
                     <a href="#electronic">
                       Electronic and Algorithmic Compositions
                     </a>
+                  </li>
+                  <li>
+                    <a href="#acoustic">Acoustic Compositions</a>
                   </li>
 
                   <li>
@@ -35,11 +35,9 @@ const Navbar = () => {
                 </ul>
               </details>
             </li>
+
             <li>
-              <a>Writing</a>
-            </li>
-            <li>
-              <a href="#about">About</a>
+              <a href="#about">About Me</a>
             </li>
           </ul>
         </div>
